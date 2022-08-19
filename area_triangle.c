@@ -4,7 +4,7 @@ double area_triangle(double x, double y, double z, double s)
 {
     return sqrt(s*(s-x)*(s-y)*(s-z));
 }
-int main()
+int main(void)
 {
     double a, b, c,d,area, n;
     n=scanf("%lf%lf%lf",&a,&b,&c);
