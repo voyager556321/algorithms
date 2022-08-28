@@ -1,2 +1,2 @@
-# Task C 
+# Tasks C 
 - Executed tasks
