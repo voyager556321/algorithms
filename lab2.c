@@ -7,15 +7,12 @@ int cal_max_min_avg_val(int min_v, int max_v, float avg_v)
                 avg_v += arr[i];
                 if (arr[i] > max_v) {
                         max_v = arr[i];
-                        return max_v;
                 } else {
                         min_v = arr[i];
                         if (arr[i - 1] < min_v) {
                                 min_v = arr[i - 1];
-                                return min_v;
                         }
                 }
-                return avg_v;
         } 
         return printf("max = %d, min =  %d, avg = %0.2lf", max_v, min_v, avg_v);
 }
