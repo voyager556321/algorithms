@@ -5,17 +5,15 @@ int main(void)
         int i = 0;
         int max = a[0];
         int second_max = a[0];
-        while(i < 10) {
+        while (i < 10) {
                 if(a[i] > max) {
                         max = a[i];
-
-                }
-                if((a[i] > second_max) && (a[i] < max)) {
+                } else if (a[i] > second_max) {
                         second_max = a[i];
                 }
                 ++i;
         }
-        printf("%d %d", max, second_max);
+        printf("first max = %d; second max = %d;\n", max, second_max);
         return 0;
     
 
