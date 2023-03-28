@@ -1,2 +1,1 @@
 # Algorithms
-- Executed tasks
