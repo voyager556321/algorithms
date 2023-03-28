@@ -1,2 +1,2 @@
-# Tasks C 
+# Algorithms
 - Executed tasks
