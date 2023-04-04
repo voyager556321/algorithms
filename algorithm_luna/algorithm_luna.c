@@ -1,20 +1,20 @@
-#include "luna_algorithm.h"
-#include <stdlib.h>
+#include "algorithm_luna.h"
+
 #define SIZE_ARR 16
 void card_input()
 {
-        char *cptr = (char *)malloc(SIZE_ARR * sizeof(*cptr)); 
-        if (*cptr != NULL) {
+        char *cptr = malloc(SIZE_ARR * sizeof(*cptr)); 
+        if (cptr != NULL) {
                 printf("Enter the number card Visa: ");
                 for (int i = 0; i < SIZE_ARR; ++i) {
-                        fgets(*(cptr + i), 16, stdin);
+                        fgets((cptr + i), 16, stdin);
                 }
         }
         free(cptr);
         return 0;
 }
 
-void luna_algorithm()
+void algorithm_luna()
 {
         int num = 0, sum = 0;
         for (int i = 14; i >= 0; i -=2) {
