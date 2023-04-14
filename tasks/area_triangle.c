@@ -21,7 +21,7 @@ int main(void)
                 printf("Error: this triangle not exist\n");
                 return 3;
         }
-        area=area_triangle(a, b, c, d);
+        area = area_triangle(a, b, c, d);
         printf("Area=%.2f\n",area);
         return 0;
 }
